@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+height: 100vh;
+    width: 100vw;
+
+  background-size: cover;
+        font-family: Arial;
+  background: url("cosmos.jpg") no-repeat center center fixed;
+        background-size: cover;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.h2{
+    color: white;
+    font-family: Arial;
+font-style: normal;
+font-weight: 500;
+font-size: 55px;
+line-height: 120%;
+}
+form{background: #171929;
+box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.7);
+border-radius: 27px;
+    font-size:1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px;
+    padding: 25px;
+
+
+}
+.h4{font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 120%;
+width: 238px;
+height: 44px;
+margin-top: 10px;
+text-align: center;
+    color: white;
+text-align: center;
+    width: 250px;
+}
+.h6{
+
+text-align: center;
+    width: 270px;
+ font-style: normal;
+font-weight: 300;
+font-size: 15px;
+line-height: 120%;
+/* identical to box height, or 18px */
+
+
+color: #797EA3;
+    margin: 10px 0;
+}
+label{ padding: 0 15px;
+    margin-top: 35px;
+    margin-bottom: 10px;
+vertical-align: center;
+
+text-align: left;
+    width: 300px;
+font-weight: 300;
+font-size: 15px;
+line-height: 120%;
+/* identical to box height, or 18px */
+
+
+color: #797EA3;
+}
+input,textarea{
+
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom:  #797EA3 solid 1px;
+    width: 90%;
+    box-shadow: none;font-weight: normal;
+font-size: 18px;
+line-height: 120%;
+
+
+
+color: #FFFFFF;
+
+}
+
+ button{
+     font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 120%;
+text-align: center;
+border:  transparent;
+     color: rgba(255, 255, 255, 0.7);
+     padding:10px 25px;
+     background: #2C2F47;
+     border-radius: 28px;
+ }
+ a{
+      color: rgba(255, 255, 255, 0.7);
+
+ }
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 15px;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+ background: #2C2F47;
+border-radius: 8px;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 10px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
